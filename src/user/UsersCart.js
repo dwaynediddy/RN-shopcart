@@ -1,15 +1,15 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 
-const ProductOverviewScreen = () => {
+const UsersCart = () => {
     return (
         <View style={styles.screen}>
-            <Text>Product Screen</Text>
+            <Text>Your Cart Items</Text>
         </View>
     )
 }
 
-export default ProductOverviewScreen
+export default UsersCart
 
 const styles = StyleSheet.create({
     screen: {
@@ -18,4 +18,3 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     }
 })
-

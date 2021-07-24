@@ -10,32 +10,17 @@ import {
 } from 'react-native'
 
 import ProductOverviewScreen from '../screens/ProductOverviewScreen'
+import UsersCart from '../user/UsersCart'
 
 
 const Tab = createBottomTabNavigator()
-
-function HomeScreen() {
-    return (
-      <View style={styles.screen}>
-        <Text>Home!</Text>
-      </View>
-    );
-  }
-  
-  function SettingsScreen() {
-    return (
-      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <Text>Settings!</Text>
-      </View>
-    );
-  }
 
 const BottomNav = () => {
     return (
         <NavigationContainer>
             <Tab.Navigator>
-                <Tab.Screen name="home" component={HomeScreen} />
-                <Tab.Screen name="Settings" component={SettingsScreen} />
+                <Tab.Screen name="Products" component={ProductOverviewScreen} />
+                <Tab.Screen name="Cart" component={UsersCart} />
             </Tab.Navigator>
         </NavigationContainer>
     )
